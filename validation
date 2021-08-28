@@ -22,6 +22,7 @@ public class SampleTest {
 		// #Scenario 2
 		String msg2 = validatePwnedMsgForEmail("rrfsd@sdfsd.com");
 		Assert.assertEquals(msg2, "Good news — no pwnage found!");
+		driver.quit();
 	}
 
 	public static String validatePwnedMsgForEmail(String email) {
